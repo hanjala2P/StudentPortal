@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark;
+}
+
+/* Tailwind v4 e dark mode manual strategy enable kora */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --fallback-b1: #ffffff;
+}
+
+.dark {
+  --fallback-b1: #111827;
+}
